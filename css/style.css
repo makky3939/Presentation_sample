@@ -1,0 +1,101 @@
+body {
+
+    
+    background:#3cbedf;
+
+}
+
+h1{
+	font-size:40px;
+	line-height:100%;
+}
+
+p{
+	font-size:22px;
+	line-height:180%;
+}
+
+a {
+	font-size:36px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    background: #3cbedf;
+    border-radius: 0.2em;
+
+}
+
+a:hover{
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+
+.step {
+    position: relative;
+    width: 1024px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    line-height: 1.5;
+}
+
+.slidebox{
+    display: block;
+
+
+    height: 700px;
+    padding: 40px 60px;
+
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    color: rgb(102, 102, 102);
+    line-height: 36px;
+}
+#ing b,#ing span ,#ing h1{
+    display: inline-block;
+	margin-left:10px;
+	margin-right:10px;
+
+}
+
+/*
+    ... and we want 'positioning` word to move up a bit when the step gets
+    `present` class ...
+*/
+#ing.present .positioning {
+    -webkit-transform: translateY(-10px);
+    -moz-transform:    translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    -o-transform:      translateY(-10px);
+    transform:         translateY(-10px);
+}
+
+/*
+    ... 'rotating' to rotate quater of a second later ...
+*/
+
+/*
+    ... and 'scaling' to scale down after another quater of a second.
+*/
+#ing.present .scaling {
+    -webkit-transform: scale(0.7);
+    -moz-transform:    scale(0.7);
+    -ms-transform:     scale(0.7);
+    -o-transform:      scale(0.7);
+    transform:         scale(0.7);
+
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+}
